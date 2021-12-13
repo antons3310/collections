@@ -29,7 +29,7 @@ public class CollectionServiceImpl implements CollectionService {
     public List<Integer> removeOddNumbers() {
         List<Integer> oddNums = new ArrayList<>(List.copyOf(nums));
 
-        oddNums.removeIf(integer -> integer % 2 == 0);
+        oddNums.removeIf(num -> num % 2 == 0);
 
         return oddNums;
     }
