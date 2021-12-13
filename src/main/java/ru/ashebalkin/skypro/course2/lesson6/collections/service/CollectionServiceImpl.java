@@ -27,7 +27,7 @@ public class CollectionServiceImpl implements CollectionService {
 
     @Override
     public List<Integer> removeOddNumbers() {
-        List<Integer> oddNums = new ArrayList<>(List.copyOf(nums));
+        List<Integer> oddNums = new ArrayList<>(nums);
 
         oddNums.removeIf(num -> num % 2 == 0);
 
